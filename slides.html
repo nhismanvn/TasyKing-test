@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Slides</title>
+</head>
+<body>
+<h1>Slides</h1>
+<div th:each="slide : ${slides}">
+    <img th:src="@{${slide.imageUrl}}" alt="Slide Image">
+    <p th:text="${slide.description}"></p>
+</div>
+</body>
+</html>

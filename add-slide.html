@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Slide</title>
+</head>
+<body>
+<h1>Add Slide</h1>
+<form th:action="@{/api/admin/slides}" method="post">
+    <label for="imageUrl">Image URL:</label>
+    <input type="text" id="imageUrl" name="imageUrl" required>
+    <br>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+    <br>
+    <button type="submit">Add Slide</button>    
+</form>
+</body>
+</html>
